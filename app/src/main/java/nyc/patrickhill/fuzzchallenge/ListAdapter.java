@@ -154,8 +154,8 @@ public class ListAdapter extends BaseAdapter {
 
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         if (savedInstanceState.containsKey(KEY_ADAPTER_STATE)) {
-            ArrayList<Item> objects = savedInstanceState.getParcelableArrayList(KEY_ADAPTER_STATE);
-            setItems(objects);
+            ArrayList<Item> items = savedInstanceState.getParcelableArrayList(KEY_ADAPTER_STATE);
+            setItems(items);
         }
     }
 
